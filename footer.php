@@ -14,18 +14,24 @@
 		
 								<?php else : ?>
 
-								<!-- This content shows up if there are no widgets defined in the backend. -->
 								<div>
 									<p>Please add a Widget!</p>
 								</div>
+								
 								<?php endif; ?>
-							</div>
-							
+							</div>							
+							<div class="large-4 medium-4 columns footer-widget">
+								<?php if ( is_active_sidebar( 'footbar2' ) ) : ?>
+
+									<?php dynamic_sidebar( 'footbar2' ); ?>
+		
+								<?php else : ?>
 								
+								<h4>Viele Partner in vielen Ländern</h4>
+								<p class="map"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/partner-map.png" alt="ICAN Partner Weltkarte" /></a></p>
 								
-							<div class="large-4 medium-4 columns">
-								<h4>440 Partner in 98 Ländern</h4>
-								<p class="map"><a href="http://www.icanw.org/campaign/partner-organizations/"><img src="http://www.icanw.org/wp-content/uploads/2012/12/footer3.png" alt="" /></a></p>
+								<?php endif; ?>
+								
 							</div>
 						</div> <!-- end #inner-footer -->
 					</footer> <!-- end .footer -->

@@ -231,6 +231,12 @@
 		"oAP": "\/assets\/functions\/theme-support.php",
 		"oF": 0
 		},
+	"\/assets\/functions\/widgets.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/functions\/widgets.php",
+		"oF": 0
+		},
 	"\/assets\/images\/apple-icon-touch.png": {
 		"ft": 32768,
 		"iS": 19259,
@@ -256,6 +262,14 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/partner-map.png": {
+		"ft": 32768,
+		"iS": 12522,
+		"oA": 0,
+		"oAP": "\/assets\/images\/partner-map.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/assets\/images\/search-arrow.png": {
 		"ft": 32768,
@@ -4829,7 +4843,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 503254035,
-	"displayValue": "temp_ican-wp",
+	"displayValue": "ican-wp",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-chloe",
 	"lastBuiltDate": 503260844
