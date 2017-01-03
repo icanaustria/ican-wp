@@ -1,0 +1,28 @@
+/******************************************************************
+Theme Name: ICAN Template
+Theme URI: http://www.icanaustria.at/template
+Description: Template for ICAN Organisations made by ICAN Austria. Based on JointsWP, Foundation 6 and SASS.
+Author: Silvio Heinze
+Author URI: http://www.silvioheinze.eu
+Version: 4.0
+License: GNU General Public License & MIT
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Sass
+******************************************************************/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit !important;
+  font-weight: 600 !important;
+  text-transform: none !important; }
+
+.top-bar li a {
+  font-family: inherit !important; }
+
+.top-bar .top-bar-right li a {
+  font-size: .85rem; }
+
+h2.front-title {
+  font-size: 1rem; }
+
+footer h4 {
+  font-size: 1.25rem !important; }

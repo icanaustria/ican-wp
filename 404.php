@@ -1,26 +1,31 @@
 <?php get_header(); ?>
+			
+	<div id="content">
 
-<div class="row">
-	<div class="small-12 large-8 columns" role="main">
+		<div id="inner-content" class="row">
+	
+			<main id="main" class="large-8 medium-8 columns" role="main">
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php _e('File Not Found', 'FoundationPress'); ?></h1>
-			</header>
-			<div class="entry-content">
-				<div class="error">
-					<p class="bottom"><?php _e('The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'FoundationPress'); ?></p>
-				</div>
-				<p><?php _e('Please try the following:', 'FoundationPress'); ?></p>
-				<ul>
-					<li><?php _e('Check your spelling', 'FoundationPress'); ?></li>
-					<li><?php printf(__('Return to the <a href="%s">home page</a>', 'FoundationPress'), home_url()); ?></li>
-					<li><?php _e('Click the <a href="javascript:history.back()">Back</a> button', 'FoundationPress'); ?></li>
-				</ul>
-			</div>
-		</article>
+				<article id="content-not-found">
+				
+					<header class="article-header">
+						<h1><?php _e( 'Epic 404 - Article Not Found', 'jointswp' ); ?></h1>
+					</header> <!-- end article header -->
+			
+					<section class="entry-content">
+						<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'jointswp' ); ?></p>
+					</section> <!-- end article section -->
 
-	</div>
-	<?php get_sidebar(); ?>
-</div>
+					<section class="search">
+					    <p><?php get_search_form(); ?></p>
+					</section> <!-- end search section -->
+			
+				</article> <!-- end article -->
+	
+			</main> <!-- end #main -->
+
+		</div> <!-- end #inner-content -->
+
+	</div> <!-- end #content -->
+
 <?php get_footer(); ?>

@@ -1,36 +1,42 @@
 <?php
-/*
-Author: Ole Fredrik Lie
-URL: http://olefredrik.com
-*/
+// Theme support options
+require_once(get_template_directory().'/assets/functions/theme-support.php'); 
 
+// WP Head and other cleanup functions
+require_once(get_template_directory().'/assets/functions/cleanup.php'); 
 
-// Various clean up functions
-require_once('library/cleanup.php');
+// Register scripts and stylesheets
+require_once(get_template_directory().'/assets/functions/enqueue-scripts.php'); 
 
-// Required for Foundation to work properly
-require_once('library/foundation.php');
+// Register custom menus and menu walkers
+require_once(get_template_directory().'/assets/functions/menu.php'); 
 
-// Register all navigation menus
-require_once('library/navigation.php');
+// Register sidebars/widget areas
+require_once(get_template_directory().'/assets/functions/sidebar.php'); 
 
-// Add menu walkers
-require_once('library/menu-walker.php');
-require_once('library/offcanvas-walker.php');
+// Makes WordPress comments suck less
+require_once(get_template_directory().'/assets/functions/comments.php'); 
 
-// Create widget areas in sidebar and footer
-require_once('library/widget-areas.php');
+// Replace 'older/newer' post links with numbered navigation
+require_once(get_template_directory().'/assets/functions/page-navi.php'); 
 
-// Return entry meta information for posts
-require_once('library/entry-meta.php');
+// Adds support for multiple languages
+require_once(get_template_directory().'/assets/translation/translation.php'); 
 
-// Enqueue scripts
-require_once('library/enqueue-scripts.php');
+// Remove 4.2 Emoji Support
+// require_once(get_template_directory().'/assets/functions/disable-emoji.php'); 
 
-// Add theme support
-require_once('library/theme-support.php');
+// Adds site styles to the WordPress editor
+require_once(get_template_directory().'/assets/functions/editor-styles.php'); 
 
-// Add Header image
-require_once('library/custom-header.php');
+// Related post function - no need to rely on plugins
+// require_once(get_template_directory().'/assets/functions/related-posts.php'); 
 
-?>
+// Use this as a template for custom post types
+// require_once(get_template_directory().'/assets/functions/custom-post-type.php');
+
+// Customize the WordPress login menu
+require_once(get_template_directory().'/assets/functions/login.php'); 
+
+// Customize the WordPress admin
+require_once(get_template_directory().'/assets/functions/admin.php'); 

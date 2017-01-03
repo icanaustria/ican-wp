@@ -1,34 +1,30 @@
-/*
-Theme Name:         FoundationPress
-Theme URI:          http://foundationpress.olefredrik.com
-Github Theme URI:   https://github.com/olefredrik/FoundationPress
-Description:        FoundationPress is a WordPress starter theme based on Foundation 5 by Zurb
-Version:            5.5.1
-Author:             Ole Fredrik Lie
-Author URI:         http://olefredrik.com/
+/******************************************************************
+Theme Name: ICAN Template
+Theme URI: http://www.icanaustria.at/template
+Description: Template for ICAN Organisations made by ICAN Austria. Based on JointsWP, Foundation 6 and SASS.
+Author: Silvio Heinze
+Author URI: http://www.silvioheinze.eu
+Version: 4.0
+License: GNU General Public License & MIT
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Sass
+******************************************************************/
 
-License:            MIT License
-License URI:        http://www.opensource.org/licenses/mit-license.php
-*/
-
-/* ---------------------------------------------------------------------------- 
-  
-  Unfortunately WordPress will require a style.css file
-  located in the theme's root folder for stuff to work.
-
-  However, we will not be using vanilla CSS. We're using Sass.
-
-  Sass is a superset of CSS that adds in amazing features
-  such as variables, nested selectors and loops. It's also
-  the easiest way to customize Foundation.
-
-  All Sass files are located in the /scss folder.
-
-  Please read the README.md file before getting started. More info on how
-  to use Sass with Foundation can be found here:
-  http://foundation.zurb.com/docs/sass.html
-
-  If you for some reason would like to write plain css instead of using Sass,
-  you could just enqueue this file (style.css) to the header and add your styles in this file
-
----------------------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+font-family:inherit !important;
+font-weight:600 !important;
+text-transform:none !important;
+}
+.top-bar li a {
+font-family:inherit !important;
+}
+.top-bar .top-bar-right li a {
+font-size:.85rem;
+}
+h2.front-title {
+	font-size:1rem;
+}
+footer h4 {
+font-size:1.25rem !important;
+}

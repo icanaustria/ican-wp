@@ -1,32 +1,23 @@
 <?php get_header(); ?>
+	
+	<div id="content">
+	
+		<div id="inner-content" class="row">
+	
+		    <main id="main" class="large-8 medium-8 columns" role="main">
+				
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<div class="row">
-	<div class="small-12 large-8 columns" role="main">
+			    	<?php get_template_part( 'parts/loop', 'page' ); ?>
+			    
+			    <?php endwhile; endif; ?>							
+			    					
+			</main> <!-- end #main -->
 
-	<?php do_action('foundationPress_before_content'); ?>
+		    <?php get_sidebar(); ?>
+		    
+		</div> <!-- end #inner-content -->
 
-	<?php while (have_posts()) : the_post(); ?>
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-			</header>
-			<?php do_action('foundationPress_page_before_entry_content'); ?>
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
-			<footer>
-				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
-				<p><?php the_tags(); ?></p>
-			</footer>
-			<?php do_action('foundationPress_page_before_comments'); ?>
-			<?php comments_template(); ?>
-			<?php do_action('foundationPress_page_after_comments'); ?>
-		</article>
-	<?php endwhile;?>
+	</div> <!-- end #content -->
 
-	<?php do_action('foundationPress_after_content'); ?>
-
-	</div>
-	<?php get_sidebar(); ?>
-</div>
 <?php get_footer(); ?>

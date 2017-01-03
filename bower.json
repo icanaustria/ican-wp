@@ -1,12 +1,14 @@
 {
-  "name": "foundationpress",
-  "main": [
-    "css/foundation.css",
-    "js/foundation.js"
-  ],
+  "name": "JointsWP",
+  "private": true,
   "ignore": [],
   "dependencies": {
-    "foundation": "zurb/bower-foundation",
-    "fontawesome": "~4.3.0"
+    "foundation-sites": "^6.3.0",
+    "jquery": "^3.1.1",
+    "what-input": "^4.0.4"
+  },
+  "resolutions": {
+    "jquery": "^3.1.1",
+    "what-input": "^4.0.4"
   }
 }

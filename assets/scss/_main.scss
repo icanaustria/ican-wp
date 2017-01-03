@@ -1,0 +1,814 @@
+/************************************************
+
+Stylesheet: Main Stylesheet
+
+*************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+/*********************
+LINK STYLES
+*********************/
+a, a:visited {
+
+	// Mobile tap color
+	&:link {
+		//Highlight links on iOS, Similar to :hover for mobile devices.
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+/*********************
+H1, H2, H3, H4, H5 P STYLES
+*********************/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+
+	// Removing text decoration from all headline links
+	a {
+		text-decoration: none;
+	}
+	
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	color: $black;
+}
+
+h1, .h1 {
+
+}
+
+h2, .h2 {
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+h3, .h3 {
+	font-size: 1.2em;
+	font-weight: 400;
+
+}
+
+h4, .h4 {
+	
+}
+
+h5, .h5 {
+
+}
+
+/*********************
+HEADER STYLES
+*********************/
+.header {
+	ul.off-canvas-list li {
+		list-style: none;
+	}
+	background: $light-gray;
+	border-top: $medium-gray 0.5em solid;
+	padding-top: 25px;
+}
+
+#header-logo {
+	height: 150px;
+	img {
+		width: 40%;
+		height: 40%;
+		
+	}
+}
+
+.header-logo-font1 {
+	font-size: 3em;
+	color: $primary-color;
+	line-height: 1em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+
+}
+
+.header-logo-font2 {
+	font-size: 1.3em;
+	color: $black;
+	line-height: 1.2em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+}
+
+ 
+
+
+#header-socialbox {
+	text-align: right;
+	a {
+		display: inline-block;
+		font-size: 2.5em;
+		margin-right: 0.3em;
+	}
+}
+
+#header-search {
+	display: inline-block;
+	border: none;
+	padding-top: 13px;
+	input[type=text] {
+		position: relative;
+		display: block;
+		padding-bottom: 0;
+		padding-top: 0;
+		width: 100%;
+		padding-left: 10px;
+		letter-spacing: 1px;
+		height: 32px;
+		font-weight: bold;
+		text-transform: uppercase;
+		background: #dadada;
+		z-index: 5;
+		-moz-transition: .9s ease-in-out;
+		-webkit-transition: .9s ease-in-out;
+		transition: .9s ease-in-out;
+	}
+	input[type=submit] {
+		position: absolute;
+		top: 0px;
+		right: -35px;
+		border: none;
+		width: 35px;
+		height: 32px;
+		color: $white;
+		background-color: #da1f3c;
+		background-image: url(../images/search-arrow.png);
+		background-position: -35px 0px;
+		background-repeat: no-repeat;
+		z-index: 4;
+		-moz-transition: .3s ease-in-out;
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+}
+ 
+/*********************
+NAVIGATION STYLES
+*********************/
+#top-row {
+	border-top: $white 2px solid;
+
+}
+
+.top-bar {
+	.title-area {
+		z-index: 1;
+	}
+	padding: 0;
+	font-size: 1em;
+	li {
+		a:hover {
+			background: $dark-gray;
+			color: $white;
+		}
+		a {
+			color: $black;
+			font-family: "Oswald", sans-serif;
+			text-transform: uppercase;
+			font-weight: bold;
+			border-right: $white 2px solid;
+		}
+	}	
+	ul {
+		border-left: $white 2px solid;
+	}
+	
+	.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
+		border-color: $white transparent transparent;
+	}
+	
+	.is-dropdown-submenu {
+		min-width: 300px;
+		border-left: $white 2px solid;
+		font-size: 0.8em;
+		li {
+			border-bottom: $white 2px solid;
+
+			a {
+				background: $primary-color;
+				color: $white;
+			}
+			a:hover {
+				background: $black;
+				color: $white;
+			}
+		}
+		.is-dropdown-submenu-parent.opens-right > a::after {
+			border-color: transparent transparent transparent $white;
+		}
+	}
+	
+	.top-bar-right {
+		ul {
+			border-left: none;
+			li {
+				a {
+					border: none;
+					color: $primary-color;
+				}
+			}
+		}
+	}
+} 
+
+
+
+.off-canvas-list {
+	ul {
+		margin-left: 0;
+		li {
+			a {
+				border-bottom: 0px;
+			}
+		}
+		.dropdown {
+			margin-left: 20px;
+		}
+	}
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+#content {
+	#inner-content {
+		padding: 1rem 0rem;
+	}
+}
+
+.single-title,
+.page-title {
+	
+}
+
+.single-title {
+	
+}
+
+.page-title {
+	
+	// Remove Foundation vcard styling from author page titles
+	.vcard {
+		border: 0px;
+		padding: 0px;
+	}
+}
+
+.archive-title {
+
+}
+
+
+.article-header {
+	img {
+		margin-bottom: 1rem;
+	}
+}
+
+// Post meta  
+.byline {
+	color: #999;
+	time {}
+}
+
+// Entry content  
+.entry-content {
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.alignleft, img.alignleft { 
+		margin-right: 1.5em; 
+		display: inline; 
+		float: left; 
+	}
+	.alignright, img.alignright { 
+		margin-left: 1.5em; 
+		display: inline; 
+		float: right; 
+	}
+	.aligncenter, img.aligncenter { 
+		margin-right: auto; 
+		margin-left: auto; 
+		display: block; 
+		clear: both; 
+	}
+			
+	video, object {
+		max-width: 100%;
+		height: auto;
+		}
+
+	pre {
+		background: #eee;
+		border: 1px solid #cecece;
+		padding: 10px;
+		}
+
+} 
+
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
+
+	// Images inside wp-caption  
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
+} 
+
+// Add Foundation styling to password protect button
+.post-password-form input[type="submit"] {
+	@include button;
+}
+
+
+// front page
+
+.front-title {
+	background: $primary-color;
+	padding: 7px 20px 7px 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	color: $white;
+	font-weight: 600;
+}
+
+.front-article {
+	min-height: 200px;
+	h3 a {
+		color: #000;
+	}
+	h3 a:hover {
+		color: $primary-color;
+	}
+}
+
+.front-article-meta {
+	color: $dark-gray;
+}
+
+// content share
+
+.content-share {
+	list-style: none;
+	margin-left: 0;
+	li {
+		display: inline-block;
+		a {
+			font-size: 2em;
+			color: $dark-gray;
+			margin-right: 0.5em;
+		}
+	}		
+}
+
+// archive article
+
+.archive-article {
+	max-height: 23rem;
+}
+
+
+// team article on team page
+
+.team-article {
+	height: 23rem;
+}
+
+/*********************
+IMAGE GALLERY STYLES
+*********************/
+	.gallery {
+
+		dl {
+
+			a {}
+
+			img {}
+
+		}
+
+		dt {}
+
+		dd {}
+
+} 
+
+// Gallery caption styles
+.gallery-caption {}
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
+
+/*********************
+PAGE NAVI STYLES
+*********************/
+.page-navigation {
+	margin-top: 1rem;
+}
+
+/*********************
+COMMENT STYLES
+*********************/
+#comments {
+	.commentlist {
+		margin-left: 0px;
+	}
+}
+
+#respond {
+	ul {
+		margin-left: 0px;
+	}
+}
+
+.commentlist {
+	li {
+		position: relative;
+		clear: both;
+		overflow: hidden;
+		list-style-type: none;
+		margin-bottom: 1.5em;
+		padding: 0.7335em 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		ul.children {
+			margin: 0;
+
+			li {}
+
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           // Change number for different depth  
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+		}
+	}
+
+	li[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	li.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	li:not(.depth-1) {
+		margin-left: 10px;
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	li.depth-2 {}
+	li.depth-3 {
+	}
+	li.depth-4 {}
+	li.depth-5 {}
+
+	// General comment classes  
+	.alt {}
+	.odd {
+	}
+	.even {
+	}
+	.parent {}
+	.comment {}
+	.children {}
+	.pingback {}
+	.bypostauthor {}
+	.comment-author {}
+	.comment-author-admin {}
+	.thread-alt {}
+	.thread-odd {}
+	.thread-even {}
+
+	// vcard  
+	.vcard {
+		margin-left: 50px;
+
+		cite.fn {
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			float: right;
+
+			a {
+				color: #999;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+
+		img.photo {}
+
+		img.avatar {
+			position: absolute;
+			left: 10px;
+			padding: 2px;
+			border: 1px solid #cecece;
+			background: $white;
+		}
+
+	} // end .commentlist .vcard  
+
+
+	// comment meta  
+	.comment-meta {
+
+		a {}
+
+	}
+
+	.commentmetadata {
+
+		a {}
+
+	}
+
+	// comment content  
+	.comment_content {
+
+		p {
+			margin: 0.7335em 0 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+	} // end .commentlist .comment_content  
+
+	// comment reply link  
+	.comment-reply-link {
+		float: right;
+
+		&:hover,
+		&:focus {
+		
+		}
+
+	} // end .commentlist .comment-reply-link  
+
+} // end .commentlist  
+
+/*********************
+COMMENT FORM STYLES
+*********************/
+.respond-form {
+	margin: 1.5em 10px;
+	padding-bottom: 2.2em;
+
+	form {
+		margin: 0.75em 0;
+
+		li {
+			list-style-type: none;
+			clear: both;
+			margin-bottom: 0.7335em;
+
+			label,
+			small {
+				display: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url],
+		textarea {
+			padding: 3px 6px;
+			background: #efefef;
+			border: 2px solid #cecece;
+			line-height: 1.5em;
+
+			&:focus {
+				background: #fff;
+			}
+
+			// form validation  
+			&:invalid {
+				outline: none;
+				border-color: #fbc2c4;
+				background-color: #f6e7eb;
+				-webkit-box-shadow: none;
+				   -moz-box-shadow: none;
+				    -ms-box-shadow: none;
+						box-shadow: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url] {
+			max-width: 400px;
+			min-width: 250px;
+		}
+
+		textarea {
+			resize: none;
+			width: 97.3%;
+			height: 150px;
+		}
+
+	}
+}
+
+// comment submit button  
+#submit {}
+
+// comment form title  
+#comment-form-title {
+	margin: 0 0 1.1em;
+}
+
+// cancel comment reply link  
+#cancel-comment-reply {
+	a {}
+}
+
+// logged in comments  
+.comments-logged-in-as {}
+
+// allowed tags  
+#allowed_tags {
+	margin: 1.5em 10px 0.7335em 0;
+}
+
+// No comments  
+.nocomments {
+	margin: 0 20px 1.1em;
+}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar {
+}
+
+#searchsubmit {
+}
+
+.widgettitle {
+}
+
+.widget {
+	background: $light-gray;
+	padding: 0 20px 20px 20px;
+	margin-bottom: 20px;
+	
+	h4 {
+		background: $primary-color;
+		color: $white;
+		padding: 5px 20px;
+		font-size: 1em;
+		font-weight: 600;
+		margin-left: -20px;
+		display: inline-block;
+	}
+	
+	input[type=submit] {
+		width: 100% !important;
+		background: $dark-gray;
+		&:hover {
+			background: $primary-color;
+		}
+	}
+	
+	ul {
+		margin: 0;
+
+		li {
+			list-style: none;
+
+			&:first-child {}
+
+			&:last-child {}
+
+			a {}
+
+			// deep nesting  
+			ul {}
+
+		}
+	}
+}
+
+.tribe-events-list-widget {
+	h4.tribe-event-title {
+		background: none;
+		a {
+			color: $black;
+		}
+	}
+	ol {
+		margin-left: 0;
+	}	
+}
+
+.tribe-events-ticket-title {
+	display: none;
+}
+
+.type-tribe_events {
+	padding: 0 !important;
+}
+
+.tribe-events-content {
+	width: 100% !important;
+}
+
+.widget-fakten {
+	line-height: 1;
+	
+	li {
+		margin-bottom: 15px;
+		padding: 0;
+	}
+	
+	a {
+		color: $black;
+		font-weight: bold;
+	}
+	a:hover {
+		color: $primary-color;
+	}
+}
+
+.wp-embedded-content {
+	width: auto !important;
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+	clear: both;
+	margin-top: 1em;
+	padding-top: 1em;
+	background: $light-gray;
+	border-bottom: $medium-gray 0.5em solid;
+}
+
+#footer-info {
+	i {
+		font-size: 2em;
+	}
+}
+
+.kebo_twitter_feed_widget {
+	h4 {
+		margin-left: 0;
+		padding: 0;
+		color: $black;
+		background: none;
+		font-size: 1.5625rem;
+	}
+}
+	
+/*********************
+FOUNDATION STYLES
+*********************/
+
+/*********************
+PLUGIN STYLES
+*********************/
+// Makes Gravity Forms play nice with Foundation Form styles
+.gform_body ul {
+    list-style: none outside none;
+    margin: 0;
+}
