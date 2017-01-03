@@ -19,7 +19,6 @@ Mixins & Constants.
 /*********************
 TOOLS
 *********************/
-@import url("https://fonts.googleapis.com/css?family=Oswald");
 .image-replacement {
   text-indent: 100%;
   white-space: nowrap;
@@ -1276,7 +1275,7 @@ button {
   display: none !important; }
 
 .row {
-  max-width: 75rem;
+  max-width: 71.25rem;
   margin-right: auto;
   margin-left: auto; }
   .row::before, .row::after {
@@ -2167,7 +2166,7 @@ a {
 
 hr {
   clear: both;
-  max-width: 75rem;
+  max-width: 71.25rem;
   height: 0;
   margin: 1.25rem auto;
   border-top: 0;
@@ -4167,7 +4166,7 @@ html.is-reveal-open body {
   @media print, screen and (min-width: 40em) {
     .reveal {
       width: 600px;
-      max-width: 75rem; } }
+      max-width: 71.25rem; } }
   @media print, screen and (min-width: 40em) {
     .reveal .reveal {
       right: auto;
@@ -4178,15 +4177,15 @@ html.is-reveal-open body {
   @media print, screen and (min-width: 40em) {
     .reveal.tiny {
       width: 30%;
-      max-width: 75rem; } }
+      max-width: 71.25rem; } }
   @media print, screen and (min-width: 40em) {
     .reveal.small {
       width: 50%;
-      max-width: 75rem; } }
+      max-width: 71.25rem; } }
   @media print, screen and (min-width: 40em) {
     .reveal.large {
       width: 90%;
-      max-width: 75rem; } }
+      max-width: 71.25rem; } }
   .reveal.full {
     top: 0;
     left: 0;
@@ -4646,11 +4645,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
+h1, .h1 {
+  line-height: 1.1;
+  font-size: 2rem; }
+
 h2, .h2 {
-  font-size: 1.5em; }
+  font-size: 1.5rem; }
 
 h3, .h3 {
-  font-size: 1.2em; }
+  font-size: 1.2rem; }
 
 h5, .h5 {
   font-size: 1.1rem; }
@@ -4675,19 +4678,20 @@ HEADER STYLES
   height: 150px; }
   #header-logo img {
     width: 40%;
-    height: 40%; }
+    height: 40%;
+    max-width: 200px; }
 
 .header-logo-font1 {
-  font-size: 3em;
+  font-size: 3rem;
   color: #da1f3d;
-  line-height: 1em;
+  line-height: 1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900; }
 
 .header-logo-font2 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: #0a0a0a;
-  line-height: 1.2em;
+  line-height: 1.2;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900; }
 
@@ -4739,6 +4743,10 @@ NAVIGATION STYLES
 #top-row {
   border-top: #fefefe 2px solid; }
 
+.top-bar ul,
+.top-bar li a {
+  border: none !important; }
+
 .top-bar .top-bar-right li a {
   font-size: .85rem; }
 
@@ -4756,7 +4764,8 @@ NAVIGATION STYLES
     font-weight: bold;
     border-right: #fefefe 2px solid; }
   .top-bar ul {
-    border-left: #fefefe 2px solid; }
+    border-left: #fefefe 2px solid;
+    margin-left: -.7rem; }
   .top-bar .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
     border-color: #fefefe transparent transparent; }
   .top-bar .is-dropdown-submenu {
@@ -4773,11 +4782,13 @@ NAVIGATION STYLES
         color: #fefefe; }
     .top-bar .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after {
       border-color: transparent transparent transparent #fefefe; }
-  .top-bar .top-bar-right ul {
-    border-left: none; }
-    .top-bar .top-bar-right ul li a {
-      border: none;
-      color: #da1f3d; }
+  .top-bar .top-bar-right {
+    display: none; }
+    .top-bar .top-bar-right ul {
+      border-left: none; }
+      .top-bar .top-bar-right ul li a {
+        border: none;
+        color: #da1f3d; }
 
 .off-canvas-list ul {
   margin-left: 0; }
@@ -4883,6 +4894,10 @@ POSTS & CONTENT STYLES
 
 .front-article-meta {
   color: #8a8a8a; }
+
+.orbit-caption a {
+  font-weight: 600;
+  color: #fefefe; }
 
 .content-share {
   list-style: none;

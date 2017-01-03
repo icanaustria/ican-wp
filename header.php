@@ -40,43 +40,6 @@
 			ga('send', 'pageview');
 		</script>
 		<!-- end analytics -->
-<style>
-h1,h2,h3,h4,h5,h6,
-.h1,.h2,.h3,.h4,.h5,.h6 {
-font-family:inherit !important;
-font-weight:600 !important;
-text-transform:none !important;
-}
-.top-bar li a {
-font-family:inherit !important;
-}
-.top-bar .top-bar-right li a {
-font-size:.85rem;
-}
-.top-bar .top-bar-right {
-display:none;
-}
-.top-bar ul {
-    margin-left: -.7rem;
-}
-.top-bar ul,
-.top-bar li a {
-border:none !important;
-}
-h2.front-title {
-	font-size:1rem;
-}
-footer h4 {
-font-size:1.25rem !important;
-}
-#header-logo img {
-max-width:200px;
-}
-.row {
-max-width:1140px;
-}
-</style>
-
 	</head>
 	
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
@@ -101,8 +64,8 @@ max-width:1140px;
 								<center><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" /></center>
 							</div>	
 							<div id="header-socialbox" class="large-2 columns">
-								<a href="http://www.facebook.com/ICAN-Austria" title="Like on Facebook" target="_blank"><i class="fi-social-facebook large"></i></a>		
-								<a href="http://twitter.com/@icanaustria" title="Follow on Twitter" target="_blank"><i class="fi-social-twitter large"></i></a>
+								<a href="http://www.facebook.com/ican-austria" title="Like on Facebook" target="_blank"><i class="fi-social-facebook large"></i></a>		
+								<a href="http://twitter.com/icanaustria" title="Follow on Twitter" target="_blank"><i class="fi-social-twitter large"></i></a>
 								<a href="http://www.youtube.com/user/ICANinAction" title="Subscribe to Youtube Channel" target="_blank"><i class="fi-social-youtube large"></i></a>
 							</div>
 							<div id="header-search" class="large-2 columns">									

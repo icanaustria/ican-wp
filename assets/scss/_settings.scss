@@ -42,13 +42,11 @@
 
 @import '../../vendor/foundation-sites/scss/util/util';
 
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
 // 1. Global
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1140);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #da1f3d,

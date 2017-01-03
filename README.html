@@ -2,46 +2,41 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<meta name="findoutmorehere" content="www.jointswp.com"/>
-	<meta name="demo" content="www.jointswp.com/demo"/>
+	<meta name="demo" content="www.icanaustria.at"/>
 </head>
 <body>
 
-<p>Currently using Foundation 6.2.4</p>
+<p>Currently using Foundation 6.3.0</p>
 
-<h3 id="whatisjointswp">What is JointsWP?</h3>
+<h3 id="whatisthis">What is this?</h3>
 
-<p>JointsWP is a blank WordPress theme built with Foundation 6, giving you all the power and flexibility you need to build complex, mobile friendly websites without having to start from scratch.</p>
+<p>ican-wp is a WordPress theme built with Foundation 6 for websites of the International Campaign to Abolish Nuclear Weapons (ICAN). The theme is mobile first, this means it is build and optimized for small and medium sized screens like smartphones and tablets over mobile connections.</p>
 
-<p>Starting its humble life as a fork of the popular theme Bones, JointsWP is now the foundation of thousands of websites across the globe.</p>
+<h3 id="whatdoineedtouseit">What do I need to use it?</h3>
 
-<h3 id="whatcomeswithjointswp">What comes with JointsWP?</h3>
+<h3 id="stylesheetfolderstructure">Stylesheet Folder Structure</h3>
 
-<p>JointsWP comes pre-baked with all of the great features that are found in the Foundation framework – simply put, if it works in Foundation, it will work in JointsWP. The theme also includes:</p>
+<p>style.css: Do not worry about this file. (For some reason) it&#8217;s required by WordPress. All styling are handled in the Sass files described below</p>
 
-<ul>
-<li>Foundation Navigation Options</li>
-<li>Motion-UI</li>
-<li>Grid archive templates</li>
-<li>Translation Support</li>
-<li>Bower and Gulp Support</li>
-<li>And much, much more!</li>
-</ul>
+<p>scss/foundation.scss: Imports for Foundation components and your custom styles.</p>
 
-<h3 id="whattoolsdoineedtousejointswp">What tools do I need to use JointsWP?</h3>
+<p>scss/config/_settings.scss: Original Foundation 5 base settings
+scss/config/_custom-settings.scss: Copy the settings you will modify to this file. Make it your own
+scss/site/*.scss: Unleash your creativity and make it look perfect. Create the files you need (and remember to make import statements for all your files in scss/foundation.scss)</p>
 
-<p>You can use whatever you want – seriously. While the Sass version comes with Bower and Gulp support out of the box, you aren’t required to use those by any means. You can use CodeKit, Grunt, Compass or nothing at all. It’s completely up to you how you decide to build you theme – JointsWP won’t get in the way of your workflow.</p>
+<p>css/foundation.css: All Sass files are minified and compiled to this file</p>
 
-<h3 id="gettingstartedwithgulp">Getting Started With Gulp</h3>
+<p>css/foundation.css.map: CSS source maps</p>
 
-<ul>
-<li>Install <a href="https://nodejs.org">node.js</a>.</li>
-<li>Using the command line, navigate to your theme directory</li>
-<li>Run npm install</li>
-<li>Run gulp to confirm everything is working</li>
-</ul>
+<h3 id="scriptfolderstrucutre">Script Folder Strucutre</h3>
 
-<p><a href="http://jointswp.com/docs/gulp/">Read more about how Gulp is used with JointsWP.</a></p>
+<p>bower_components/: This is the source folder where all Foundation components are located. foundation update will check and update scripts in this folder.</p>
+
+<p>js/custom: This is where you put all your custom scripts. Every .js file you put in this directory will be minified and concatinated to foundation.js</p>
+
+<p>js/vendor: Vendor scripts are copied from bower_components/ to this directory. We use this path for enqueing the vendor scripts in WordPress.</p>
+
+<p>Please note that you must run grunt build in your terminal for the script to be copied and concatinated. See Gruntfile.js for details</p>
 
 </body>
 </html>

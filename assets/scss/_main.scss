@@ -35,15 +35,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
+	line-height: 1.1;
+	font-size: 2rem;
 
 }
 
 h2, .h2 {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 h3, .h3 {
-	font-size: 1.2em;
+	font-size: 1.2rem;
 
 }
 
@@ -60,7 +62,7 @@ h2.front-title {
 	font-size:1rem;
 }
 footer h5 {
-font-size:1.25rem !important;
+	font-size:1.25rem !important;
 }
 
 
@@ -81,23 +83,24 @@ HEADER STYLES
 	img {
 		width: 40%;
 		height: 40%;
+		max-width:200px;
 		
 	}
 }
 
 .header-logo-font1 {
-	font-size: 3em;
+	font-size: 3rem;
 	color: $primary-color;
-	line-height: 1em;
+	line-height: 1;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 900;
 
 }
 
 .header-logo-font2 {
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	color: $black;
-	line-height: 1.2em;
+	line-height: 1.2;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 900;
 }
@@ -163,6 +166,13 @@ NAVIGATION STYLES
 }
 
 
+
+.top-bar ul,
+.top-bar li a {
+border:none !important;
+}
+
+
 .top-bar .top-bar-right li a {
 font-size:.85rem;
 }
@@ -187,6 +197,7 @@ font-size:.85rem;
 	}	
 	ul {
 		border-left: $white 2px solid;
+		margin-left: -.7rem;
 	}
 	
 	.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
@@ -215,6 +226,7 @@ font-size:.85rem;
 	}
 	
 	.top-bar-right {
+		display: none;
 		ul {
 			border-left: none;
 			li {
@@ -373,6 +385,12 @@ POSTS & CONTENT STYLES
 
 .front-article-meta {
 	color: $dark-gray;
+}
+
+
+.orbit-caption a {
+	font-weight: 600;
+	color: $white;
 }
 
 // content share
