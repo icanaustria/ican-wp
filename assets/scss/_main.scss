@@ -29,10 +29,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	a {
 		text-decoration: none;
 	}
-	
-	font-family: "Oswald", sans-serif;
-	text-transform: uppercase;
 	color: $black;
+	font-family: inherit;
+	font-weight: 600 !important;
 }
 
 h1, .h1 {
@@ -41,12 +40,10 @@ h1, .h1 {
 
 h2, .h2 {
 	font-size: 1.5em;
-	font-weight: 400;
 }
 
 h3, .h3 {
 	font-size: 1.2em;
-	font-weight: 400;
 
 }
 
@@ -55,8 +52,17 @@ h4, .h4 {
 }
 
 h5, .h5 {
-
+	font-size: 1.1rem;
 }
+
+
+h2.front-title {
+	font-size:1rem;
+}
+footer h5 {
+font-size:1.25rem !important;
+}
+
 
 /*********************
 HEADER STYLES
@@ -156,6 +162,11 @@ NAVIGATION STYLES
 
 }
 
+
+.top-bar .top-bar-right li a {
+font-size:.85rem;
+}
+
 .top-bar {
 	.title-area {
 		z-index: 1;
@@ -169,7 +180,6 @@ NAVIGATION STYLES
 		}
 		a {
 			color: $black;
-			font-family: "Oswald", sans-serif;
 			text-transform: uppercase;
 			font-weight: bold;
 			border-right: $white 2px solid;
@@ -425,6 +435,12 @@ PAGE NAVI STYLES
 .page-navigation {
 	margin-top: 1rem;
 }
+
+li.current {
+	font-weight: 800;
+	color: $white;
+}
+
 
 /*********************
 COMMENT STYLES
@@ -782,21 +798,20 @@ FOOTER STYLES
 	padding-top: 1em;
 	background: $light-gray;
 	border-bottom: $medium-gray 0.5em solid;
-}
-
-#footer-info {
-	i {
-		font-size: 2em;
-	}
-}
-
-.kebo_twitter_feed_widget {
-	h4 {
+	
+	h5 {
 		margin-left: 0;
 		padding: 0;
 		color: $black;
 		background: none;
 		font-size: 1.5625rem;
+	}
+
+}
+
+#footer-info {
+	i {
+		font-size: 2em;
 	}
 }
 	

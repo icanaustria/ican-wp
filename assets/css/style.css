@@ -4640,19 +4640,26 @@ a:link, a:visited:link {
 H1, H2, H3, H4, H5 P STYLES
 *********************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  color: #0a0a0a; }
+  color: #0a0a0a;
+  font-family: inherit;
+  font-weight: 600 !important; }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
 h2, .h2 {
-  font-size: 1.5em;
-  font-weight: 400; }
+  font-size: 1.5em; }
 
 h3, .h3 {
-  font-size: 1.2em;
-  font-weight: 400; }
+  font-size: 1.2em; }
+
+h5, .h5 {
+  font-size: 1.1rem; }
+
+h2.front-title {
+  font-size: 1rem; }
+
+footer h5 {
+  font-size: 1.25rem !important; }
 
 /*********************
 HEADER STYLES
@@ -4732,6 +4739,9 @@ NAVIGATION STYLES
 #top-row {
   border-top: #fefefe 2px solid; }
 
+.top-bar .top-bar-right li a {
+  font-size: .85rem; }
+
 .top-bar {
   padding: 0;
   font-size: 1em; }
@@ -4742,7 +4752,6 @@ NAVIGATION STYLES
     color: #fefefe; }
   .top-bar li a {
     color: #0a0a0a;
-    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     border-right: #fefefe 2px solid; }
@@ -4899,6 +4908,10 @@ PAGE NAVI STYLES
 *********************/
 .page-navigation {
   margin-top: 1rem; }
+
+li.current  {
+  font-weight: 800;
+  color: #fefefe; }
 
 /*********************
 COMMENT STYLES
@@ -5081,16 +5094,15 @@ FOOTER STYLES
   padding-top: 1em;
   background: #e6e6e6;
   border-bottom: #cacaca 0.5em solid; }
+  .footer h5 {
+    margin-left: 0;
+    padding: 0;
+    color: #0a0a0a;
+    background: none;
+    font-size: 1.5625rem; }
 
 #footer-info i {
   font-size: 2em; }
-
-.kebo_twitter_feed_widget h4 {
-  margin-left: 0;
-  padding: 0;
-  color: #0a0a0a;
-  background: none;
-  font-size: 1.5625rem; }
 
 /*********************
 FOUNDATION STYLES
