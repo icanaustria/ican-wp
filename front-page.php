@@ -55,7 +55,7 @@
 						</div>
 						<div class="large-8 columns">
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<p class="front-article-meta"><?php echo the_time( 'j. F Y' ); ?> von <?php the_author_posts_link(); ?></p>
+							<p class="front-article-meta"><?php echo the_time( 'j. F Y' ); ?> von <?php the_author(); ?></p>
 							<?php the_excerpt(); ?>	
 						</div>
 					</div>		
