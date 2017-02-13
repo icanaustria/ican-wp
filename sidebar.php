@@ -2,8 +2,6 @@
 
 	<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
-		<iframe src="//npt.icanaustria.at/pledgecounter2" frameborder="0" width="100%" height="80"></iframe>
-
 		<?php dynamic_sidebar( 'sidebar1' ); ?>
 		
 	<?php else : ?>
