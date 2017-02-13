@@ -5,12 +5,18 @@
 		<?php joints_top_nav(); ?>
 		
 	</div>
+
+<?php
+/*
 	<div class="top-bar-right">
 		<ul class="menu">
 			<li><a href="<?php echo home_url(); ?>/mitmachen">WERDE AKTIV UND UNTERSTÜTZE UNS!</a></li>
 		</ul>
 		
 	</div>
+*/
+?>
+	
 </div>
 </div>
 </div>
