@@ -2676,8 +2676,8 @@ select {
       border: 1px solid #777;
       color: #777; }
       .button.hollow.secondary:hover, .button.hollow.secondary:focus {
-        border-color: #3c3c3c;
-        color: #3c3c3c; }
+        border-color: #3c3b3b;
+        color: #3c3b3b; }
     .button.hollow.success {
       border: 1px solid #56AAF0;
       color: #56AAF0; }
@@ -4328,34 +4328,27 @@ table {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 0; }
-  table thead,
-  table tbody,
-  table tfoot {
+  thead, tbody, tfoot {
     border: 1px solid #f1f1f1;
     background-color: #fefefe; }
-  table caption {
+  caption {
     padding: 0.5rem 0.625rem 0.625rem;
     font-weight: bold; }
-  table thead {
+  thead {
     background: #f8f8f8;
     color: #0a0a0a; }
-  table tfoot {
+  tfoot {
     background: #f1f1f1;
     color: #0a0a0a; }
-  table thead tr,
-  table tfoot tr {
+  thead tr, tfoot tr {
     background: transparent; }
-  table thead th,
-  table thead td,
-  table tfoot th,
-  table tfoot td {
+  thead th, thead td, tfoot th, tfoot td {
     padding: 0.5rem 0.625rem 0.625rem;
     font-weight: bold;
     text-align: left; }
-  table tbody th,
-  table tbody td {
+  tbody th, tbody td {
     padding: 0.5rem 0.625rem 0.625rem; }
-  table tbody tr:nth-child(even) {
+  tbody tr:nth-child(even) {
     border-bottom: 0;
     background-color: #f1f1f1; }
   table.unstriped tbody {
@@ -4918,6 +4911,133 @@ POSTS & CONTENT STYLES
 /*********************
 IMAGE GALLERY STYLES
 *********************/
+.gallery {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.gallery::before, .gallery::after {
+  content: ' ';
+  display: table; }
+
+.gallery::after {
+  clear: both; }
+
+.gallery.gallery-columns-1 > dl {
+  width: 100%;
+  float: left; }
+
+.gallery.gallery-columns-1 > dl:nth-of-type(1n) {
+  clear: none; }
+
+.gallery.gallery-columns-1 > dl:nth-of-type(1n+1) {
+  clear: both; }
+
+.gallery.gallery-columns-1 > dl:last-child {
+  float: left; }
+
+.gallery.gallery-columns-2 > dl {
+  width: 50%;
+  float: left; }
+
+.gallery.gallery-columns-2 > dl:nth-of-type(1n) {
+  clear: none; }
+
+.gallery.gallery-columns-2 > dl:nth-of-type(2n+1) {
+  clear: both; }
+
+.gallery.gallery-columns-2 > dl:last-child {
+  float: left; }
+
+.gallery.gallery-columns-3 > dl {
+  width: 33.33333%;
+  float: left; }
+
+.gallery.gallery-columns-3 > dl:nth-of-type(1n) {
+  clear: none; }
+
+.gallery.gallery-columns-3 > dl:nth-of-type(3n+1) {
+  clear: both; }
+
+.gallery.gallery-columns-3 > dl:last-child {
+  float: left; }
+
+.gallery.gallery-columns-4 > dl {
+  width: 25%;
+  float: left; }
+
+.gallery.gallery-columns-4 > dl:nth-of-type(1n) {
+  clear: none; }
+
+.gallery.gallery-columns-4 > dl:nth-of-type(4n+1) {
+  clear: both; }
+
+.gallery.gallery-columns-4 > dl:last-child {
+  float: left; }
+
+.gallery.gallery-columns-5 > dl {
+  width: 20%;
+  float: left; }
+
+.gallery.gallery-columns-5 > dl:nth-of-type(1n) {
+  clear: none; }
+
+.gallery.gallery-columns-5 > dl:nth-of-type(5n+1) {
+  clear: both; }
+
+.gallery.gallery-columns-5 > dl:last-child {
+  float: left; }
+
+.gallery.gallery-columns-6 > dl {
+  width: 16.66667%;
+  float: left; }
+
+.gallery.gallery-columns-6 > dl:nth-of-type(1n) {
+  clear: none; }
+
+.gallery.gallery-columns-6 > dl:nth-of-type(6n+1) {
+  clear: both; }
+
+.gallery.gallery-columns-6 > dl:last-child {
+  float: left; }
+
+.gallery.gallery-columns-7 > dl {
+  width: 14.28571%;
+  float: left; }
+
+.gallery.gallery-columns-7 > dl:nth-of-type(1n) {
+  clear: none; }
+
+.gallery.gallery-columns-7 > dl:nth-of-type(7n+1) {
+  clear: both; }
+
+.gallery.gallery-columns-7 > dl:last-child {
+  float: left; }
+
+.gallery.gallery-columns-8 > dl {
+  width: 12.5%;
+  float: left; }
+
+.gallery.gallery-columns-8 > dl:nth-of-type(1n) {
+  clear: none; }
+
+.gallery.gallery-columns-8 > dl:nth-of-type(8n+1) {
+  clear: both; }
+
+.gallery.gallery-columns-8 > dl:last-child {
+  float: left; }
+
+.gallery dl {
+  width: 100%;
+  float: left;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+
+.gallery dl:last-child:not(:first-child) {
+  float: right; }
+
 /*********************
 PAGE NAVI STYLES
 *********************/
