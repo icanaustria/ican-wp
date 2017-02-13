@@ -71,7 +71,7 @@ function joints_gallery_style($css) {
 function joints_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-return '... <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="' . get_the_title($post->ID).'">weiterlesen &raquo; </a>';
+return '&hellip; <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="' . get_the_title($post->ID).'">[weiterlesen]</a>';
 }
 
 // Set excerpt length
