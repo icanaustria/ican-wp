@@ -66,7 +66,7 @@
 							<div id="header-socialbox" class="large-2 columns">
 								<a href="http://www.facebook.com/ican-austria" title="Like on Facebook" target="_blank"><i class="fi-social-facebook large"></i></a>		
 								<a href="http://twitter.com/icanaustria" title="Follow on Twitter" target="_blank"><i class="fi-social-twitter large"></i></a>
-								<a href="http://www.youtube.com/user/icanaustria" title="Subscribe to Youtube Channel" target="_blank"><i class="fi-social-youtube large"></i></a>
+								<a href="https://www.youtube.com/channel/UCsPkqMSlIvMRU-eu3YWT4wg" title="Subscribe to Youtube Channel" target="_blank"><i class="fi-social-youtube large"></i></a>
 							</div>
 							<div id="header-search" class="large-2 columns">									
 								<form method="get" id="desktop-search" class="search-form" action="http://www.icanaustria.at">
