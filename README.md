@@ -33,3 +33,11 @@ js/custom: This is where you put all your custom scripts. Every .js file you put
 js/vendor: Vendor scripts are copied from bower_components/ to this directory. We use this path for enqueing the vendor scripts in WordPress.
 
 Please note that you must run grunt build in your terminal for the script to be copied and concatinated. See Gruntfile.js for details
+
+### License
+
+GNU General Public License & MIT.
+
+Confused yet?
+
+All ICAN, JointsWP and WordPress functions and styles are under the GPL license. All Foundation components fall under the MIT license.
